@@ -81,6 +81,8 @@ public class Practice14FlipboardView extends View {
         canvas.translate(-centerX, -centerY);
         camera.restore();
 
+
+
         canvas.drawBitmap(bitmap, x, y, paint);
         canvas.restore();
     }
