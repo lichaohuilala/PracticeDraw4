@@ -35,9 +35,10 @@ public class Sample02ClipPathView extends View {
 
     {
         bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.maps);
-
+        // 绘制路径
         path1.addCircle(point1.x + 200, point1.y + 200, 150, Path.Direction.CW);
 
+        // 设置取反
         path2.setFillType(Path.FillType.INVERSE_WINDING);
         path2.addCircle(point2.x + 200, point2.y + 200, 150, Path.Direction.CW);
     }
@@ -52,6 +53,7 @@ public class Sample02ClipPathView extends View {
         canvas.restore();
 
         canvas.save();
+        // 绘制路径
         canvas.clipPath(path2);
         canvas.drawBitmap(bitmap, point2.x, point2.y, paint);
         canvas.restore();

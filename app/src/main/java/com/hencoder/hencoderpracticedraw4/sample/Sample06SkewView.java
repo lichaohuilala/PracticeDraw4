@@ -39,6 +39,7 @@ public class Sample06SkewView extends View {
         super.onDraw(canvas);
 
         canvas.save();
+        //  切磋
         canvas.skew(0, 0.5f);
         canvas.drawBitmap(bitmap, point1.x, point1.y, paint);
         canvas.restore();

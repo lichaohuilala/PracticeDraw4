@@ -43,10 +43,12 @@ public class Sample11CameraRotateView extends View {
         canvas.save();
         camera.save();
         camera.rotateX(30);
+        // 把旋转投影到 Canvas
         camera.applyToCanvas(canvas);
         camera.restore();
         canvas.drawBitmap(bitmap, point1.x, point1.y, paint);
         canvas.restore();
+
 
         canvas.save();
         camera.save();

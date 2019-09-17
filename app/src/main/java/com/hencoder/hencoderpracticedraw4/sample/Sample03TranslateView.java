@@ -39,6 +39,7 @@ public class Sample03TranslateView extends View {
         super.onDraw(canvas);
 
         canvas.save();
+        // canvas.translate 平移 位置
         canvas.translate(-100, -100);
         canvas.drawBitmap(bitmap, point1.x, point1.y, paint);
         canvas.restore();
